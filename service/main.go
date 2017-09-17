@@ -31,10 +31,12 @@ const (
 	TYPE = "post"
 	DISTANCE = "200km"
 	// Needs to update
-	PROJECT_ID = "around-180117"
+	PROJECT_ID = "around-180117" // mine
+	//PROJECT_ID = "179500" // stable
 	BT_INSTANCE = "around-post"
 	// Needs to update this URL if you deploy it to cloud.
-	ES_URL = "http://52.43.84.96:9200"
+	//ES_URL = "http://52.43.84.96:9200" // stable
+	ES_URL = "http://35.163.135.7:9200" // mine
 )
 
 
@@ -89,7 +91,7 @@ func handlerSearch(w http.ResponseWriter, r *http.Request) {
 		ran = val + "km"
 	}
 
-	//fmt.Printf(w, "Search received: %f %f %s", lat, lon, ran)
+	//fmt.Printf(w, "Search received: %f %f %s", lat, lon, ran) // ios only accept json response, this is not json
 	//fmt.Printf("Search received: %f %f %s", lat, lon, ran) -> no error
 
 	// Create a client
