@@ -36,7 +36,8 @@ const (
 	BT_INSTANCE = "around-post"
 	// Needs to update this URL if you deploy it to cloud.
 	//ES_URL = "http://52.43.84.96:9200" // stable
-	ES_URL = "http://35.163.135.7:9200" // mine
+	//ES_URL = "http://35.163.135.7:9200" // mine, free
+	ES_URL = "http://52.25.222.1:9200" // mine stable, charged
 )
 
 
